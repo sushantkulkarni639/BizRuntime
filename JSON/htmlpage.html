@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+    var obj1 = { user: "sushant", age: 25, place: "hubli" };
+    var obj2 = { user: "amar", age: 26, place: "patna" };
+    var obj3 = { user: "sagar", age: 27, place: "alighad" };
+    var obj4 = { u1: obj1, u2: obj2, u3: obj3 };
+    document.write(obj3.user);
+    document.write("<hr/>")
+    document.write(obj3.user + " is " + obj3.age + " yrs old and stays in " + obj3.place);
+    obj3.place = "bangalore";
+    document.write("<hr/>")
+    document.write(obj3.user + " is " + obj3.age + " yrs old and stays in " + obj3.place);
+    document.write("<hr/>")
+    document.write(obj4.u2.user);
+    document.write("<hr/>")
+    document.write(obj4["u2"]["user"]);
+    document.write("<hr/>");
+    var students = ["abc", "defg", "hijk"];
+    var fruits = ["orange", "apple", "banana"];
+    var obj5 = { arr1: students, arr2: fruits };
+    document.write(obj5.arr1[1] + " is " + obj5.arr2[2]);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
