@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+    <script>
+
+    
+        function init()
+        {
+            var fullName = localStorage.getItem("fullName");
+
+            var mobile = localStorage.getItem("mobile");
+            var UserName = localStorage.getItem("UserName");
+            var password = localStorage.getItem("password");
+            document.write("Full Name : " + fullName + "<br/>");
+            document.write("Mobile No. : " + mobile + "<br/>");
+            document.write("User Name :" + UserName + "<br/>");
+            
+            document.write("Password : " + password);
+        }
+
+    </script>
+</head>
+
+<body onload="init();">
+
+
+</body>
+</html>

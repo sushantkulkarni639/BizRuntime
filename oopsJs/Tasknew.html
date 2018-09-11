@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <br>
+            <div class="col-lg-8 m-auto d-block ">
+
+                <form action="Tasknew1.html" id="myForm" method="get" onsubmit="return validation()">
+
+                    <div class="form-group">
+
+                        <label>FullName:</label>
+                        <input type="text" name=" fullName" class="form-control" id="fullName" autocomplete="off" /><br />
+                        <span id="Name" class=" text-danger"></span><br/>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Mobile:</label>
+                        <input type="text" name=" mobile" class="form-control" id="mobile" autocomplete="off" /><br />
+                        <span id="Contact" class=" text-danger"></span><br />
+                    </div>
+
+                    <div class="form-group">
+                        <label>UserName:</label>
+                        <input type="text" name="UserName" class="form-control" id="UserName" autocomplete="off" /><br />
+                        <span id="User" class=" text-danger"></span><br />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password:</label>
+                        <input type="text" name="password" class="form-control" id="password" autocomplete="off" /><br />
+                        <span id="Pass" class=" text-danger"></span><br />
+                    </div>
+                    <input type="submit" name="submit" value="submit" /><br />
+                </form>
+            </div>
+        </div>
+    </center>
+
+    <script type="text/javascript">
+
+        function validation() {
+            var Fullname = document.getElementById('fullName').value;
+            var userName = document.getElementById("UserName").value;
+            var mobile = document.getElementById("mobile").value;
+            var Password = document.getElementById("password").value;
+
+            if (Fullname == "") {
+                document.getElementById('Name').innerHTML = " Please Enter FullName ";
+                return false;
+            }
+
+            if (userName == "") {
+                document.getElementById('User').innerHTML = "Please Enter UserName ";
+                return false;
+            }
+
+            if (mobile == "") {
+                document.getElementById('Mobile').innerHTML = " Please Enter Mobile No.";
+                return false;
+            }
+            if (isNaN(mobile)) {
+                document.getElementById("Mobile").innerHTML = " only Numbers are allowed";
+                return false;
+            }
+
+            if (mobile.length != 10) {
+                document.getElementById("Mobile").innerHTML = "mobile no. should be 10 digits";
+                return false;
+            }
+
+            if (!isNaN(userName)) {
+                document.getElementById("User").innerHTML = " **only character and number are allowed";
+                return false;
+            }
+
+          
+            if ((Password == "") && Password.search(/[a - z]/ == -2) && Password.search(/[0 - 9]/ == -2) && Password.search(/[A - Z]/ == -2) &&
+                Password.search(/[!\@\#\$\%\^\&\*\(\)\,\.\?\>\<\~\:]/ == -2)) {
+                document.getElementById('pass').innerHTML = "Please Enter password";
+                return false;
+            }
+
+            localStorage.setItem("fullName", Fullname);
+            localStorage.setItem("mobile", mobile);
+            localStorage.setItem("UserName", userName);
+            localStorage.setItem("password", Password);
+
+        }
+
+
+
+    </script>
+</body>
+</html>

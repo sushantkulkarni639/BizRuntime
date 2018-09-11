@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function Car(speed) {
+            alert("Class CAR Instantiated");
+            this.speed = speed;
+        }
+        Car.prototype.speed = 'Car Speed';
+        Car.prototype.setSpeed = function (speed) {
+            this.speed = speed;
+            alert("Car speed changed");
+        }
+
+        var car1 = new Car(40);
+        var car2 = new Car(60);
+
+        car1.setSpeed(120);
+        car2.setSpeed(140);
+    </script>
+</body>
+</html>

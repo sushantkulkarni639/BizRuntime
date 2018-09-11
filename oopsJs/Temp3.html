@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function Write(w) {
+            if (w.billingtoo.checked == true) {
+                w.copyname.value = w.firstname.value;
+            }
+        }
+    </script>
+ 
+    <b>First text</b>   <br><br>
+    <form>
+        First Name:<input type="text" name="firstname"><br><br>
+        <input type="checkbox" name="billingtoo" onclick="Write(this.form) ">
+        <em>Checkbox</em>
+        <P>
+            <b>Second text</b><br><br>
+            Copy Name:<input type="text" name="copyname"><br>
+    </form>
+
+</body>
+</html>

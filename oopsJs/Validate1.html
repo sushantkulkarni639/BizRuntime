@@ -1,0 +1,46 @@
+﻿<html lang="en">
+<head>
+    <title>Test</title>
+    <script type="text/javascript">
+
+            // Called on form's `onsubmit`
+            function tosubmit() {
+                // Getting the value of your text input
+                var mytext = document.getElementById("mytext").value;
+                var mytext1 = document.getElementById("mytext1").value;
+
+                // Storing the value above into localStorage
+                localStorage.setItem("mytext", mytext);
+                localStorage.setItem("mytext1", mytext1)
+
+                return true;
+            }
+    </script>
+</head>
+<body>
+    <center>
+        <!-- INLCUDING `ONSUBMIT` EVENT + ACTION URL -->
+        <form name="myform" onsubmit="tosubmit();" action="Validate2.html">
+            <table>
+                <tr>
+                    <td>
+                        First Name :
+                        <input id="mytext" type="text" name="FirstName" placeholder="Enter Text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Last Name :
+                        <input id="mytext1" type="text" name="lastname" placeholder="Enter Text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+</body>
+</html>

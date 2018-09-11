@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function sync() {
+            var firstname = document.getElementById('n1');
+            var copyname = document.getElementById('n2');
+            copyname.value = firstname.value;
+        }
+    </script>
+    <center>
+        <h2 style="color:chocolate">Copy Task</h2>
+        <form style="color:darkgoldenrod">
+            First Name: <input type="text" name="firstname" id="n1" onkeyup="sync()"><br><br>
+            Copy Name: <input type="text" name="copyname" id="n2" /><br><br>
+            <input type="submit" style="color:forestgreen" name="Submit" id="n3" />
+
+        </form>
+    </center>
+
+</body>
+</html>
