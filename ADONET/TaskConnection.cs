@@ -7,30 +7,28 @@ using System.Data.SqlClient;
 
 namespace ADONET
 {
-    class Display
-    { 
+    class TaskConnection
+    {
         static void Main(string[] args)
         {
-            new Display().CreateTable();
+            new TaskConnection().CreateTable();
         }
         public void CreateTable()
         {
             SqlConnection con = null;
             try
-            { 
+            {
                 con = new SqlConnection("data source=.; database=student; integrated security=SSPI");
-                SqlCommand cm = new SqlCommand("Select * from student", con); 
+                SqlCommand cm = new SqlCommand("create table connect(id int not null,name varchar(100)," +
+                    "email varchar(50), age int,salary int)", con);
                 con.Open();
-                SqlDataReader sdr = cm.ExecuteReader();
-                while (sdr.Read())
-                {
-                    Console.WriteLine(sdr["id"] + " " + sdr["name"] + " " + sdr["email"]+" "+sdr["join_date"]); // Displaying Record  
-                }
+                cm.ExecuteNonQuery();
+                Console.WriteLine("Table created Successfully");
             }
             catch (Exception e)
             {
-                Console.WriteLine("OOPs, something went wrong.\n" + e);
-            } 
+                Console.WriteLine(e);
+            }
             finally
             {
                 con.Close();
@@ -38,3 +36,4 @@ namespace ADONET
         }
     }
 }
+
