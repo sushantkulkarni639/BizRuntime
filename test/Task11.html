@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+    <script>
+
+
+        function init()
+        {
+            var mytext1 = localStorage.getItem("mytext1");
+
+            var mytext2 = localStorage.getItem("mytext2");
+            var mytext3 = localStorage.getItem("mytext3");
+            var mytext4 = localStorage.getItem("mytext4");
+            var mytext5 = localStorage.getItem("mytext5");
+            var mytext6 = localStorage.getItem("mytext6");
+            document.write("User Name :" + mytext1 + "<br/>");
+            document.write("E-mail Address:" + mytext2 + "<br/>");
+            document.write("Country:" + mytext3 + "<br/>");
+            document.write(" Gender:" + mytext4 + "<br/>");
+            document.write("Course:" + mytext5 + "<br/>");
+            document.write("Password : " + mytext6);
+        }
+
+    </script>
+</head>
+
+<body onload="init();">
+
+
+</body>
+</html>

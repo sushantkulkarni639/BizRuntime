@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // local storage program in Task11
+        function sushant() {
+            var username = document.forms["RegForm"]["UserName"];
+            var email = document.forms["RegForm"]["EMail"];
+            var country = document.forms["RegForm"]["Country"];
+            var genderM = document.forms["RegForm"]["Gender"];
+            var genderF = document.forms["RegForm"]["Gender"];
+            var what = document.forms["RegForm"]["Subject"];
+            var password = document.forms["RegForm"]["Password"];
+            //var passwordcheck = /^(?=.[0-9])(?=.[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
+
+            var mytext1 = document.getElementById("mytext1").value;
+            var mytext2 = document.getElementById("mytext2").value;
+            var mytext3 = document.getElementById("mytext3").value;
+            var mytext4 = document.getElementById("mytext4").value;
+            var mytext5 = document.getElementById("mytext5").value;
+            var mytext6 = document.getElementById("mytext6").value;
+            localStorage.setItem("mytext1", mytext1);
+            localStorage.setItem("mytext2", mytext2);
+            localStorage.setItem("mytext3", mytext3);
+            localStorage.setItem("mytext4", mytext4);
+            localStorage.setItem("mytext5", mytext5);
+            localStorage.setItem("mytext6", mytext6);
+
+            if (username.value == "") {
+                window.alert("Please enter your username.");
+                username.focus();
+                return false;
+            }
+            if (email.value == "") {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+
+            if (email.value.indexOf("@", 0) < 0) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+
+            if (email.value.indexOf(".", 0) < 0) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+            if (genderM.checked == false && genderF.checked == false) {
+                alert("You must select male or female");
+                return false;
+            }
+                if (what.selectedIndex < 1) {
+                    alert("Please choose your course.");
+                    what.focus();
+                    return false;
+            }
+            if (country.selectedIndex < 1) {
+                alert("Please choose Country.");
+                what.focus();
+                return false;
+            }
+
+            if (password.value == "") {
+                window.alert("please enter the password.");
+                password.focus();
+                return false;
+            }
+            return true;
+        }</script>
+
+</head>
+
+<body>
+   
+        <h1 style="text-align: center"> FORM VALIDATION TASK  </h1>
+
+        <form name="RegForm" action="Task11.html" onsubmit="return sushant()" method="post">
+            <p>User Name: <input id="mytext1" type="text" pattern=".{1,8}" size=65 name="UserName" placeholder="Enter User Name"> </p><br>
+            <p>E-mail Address: <input id="mytext2" type="text" size=65 name="EMail" placeholder="Enter Email Id">  </p><br>
+            <p>Country
+                
+                <select id="mytext3" type="text" value="" name="country">
+                    <option>India</option>
+                    <option>Bangladessh</option>
+                    <option>Pakistan</option>
+                    <option>Nepal</option>
+                    <option>Srilanka</option>
+                </select>
+            </p><br>
+                <p>
+                    Gender:<input id="mytext4" type="radio" name="genderM" value="0">Male</input>
+                    <input type="radio" name="genderF" value="1">Female</input>
+                </p>
+            <p>Course
+                <select id="mytext5" type="text" value="" name="Subject">
+                    <option>BTECH</option>
+                    <option>BBA</option>
+                    <option>BCA</option>
+                    <option>B.COM</option>
+                    <option>B.A</option>
+                </select>
+            </p><br>
+            <p>
+                Password: <input id="mytext6" type="password" pattern="(?=.*[0-9].*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()+=].*[!@#$%^&*()+=]).{8,}"
+                  size=65 name="Password" placeholder="Must contain minimum 2 special char, 2 numbers,1 upper case and lower case">
+            </p><br>
+            <p><input type="submit" value="Submit" name="Submit"></p>
+        </form>
+
+</body>
+</html>
+<!--//(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}
+    (?=.*\d)(?=.*[\W_]).{8,}
+    (?=.*\d)(?=.*[\W_])(?=.*[a-z])(?=.*[A-Z]).{8,}
+    -->
