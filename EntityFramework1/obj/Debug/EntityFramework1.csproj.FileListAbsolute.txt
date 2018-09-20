@@ -1,0 +1,14 @@
+E:\Bizruntime\training\c#\EntityFramework1\bin\Debug\EntityFramework1.exe.config
+E:\Bizruntime\training\c#\EntityFramework1\bin\Debug\EntityFramework1.exe
+E:\Bizruntime\training\c#\EntityFramework1\bin\Debug\EntityFramework1.pdb
+E:\Bizruntime\training\c#\EntityFramework1\bin\Debug\EntityFramework.dll
+E:\Bizruntime\training\c#\EntityFramework1\bin\Debug\EntityFramework.SqlServer.dll
+E:\Bizruntime\training\c#\EntityFramework1\bin\Debug\EntityFramework.xml
+E:\Bizruntime\training\c#\EntityFramework1\bin\Debug\EntityFramework.SqlServer.xml
+E:\Bizruntime\training\c#\EntityFramework1\obj\Debug\EntityFramework1.csprojAssemblyReference.cache
+E:\Bizruntime\training\c#\EntityFramework1\obj\Debug\EntityFramework1.csproj.CoreCompileInputs.cache
+E:\Bizruntime\training\c#\EntityFramework1\obj\Debug\EntityFramework1.csproj.CopyComplete
+E:\Bizruntime\training\c#\EntityFramework1\obj\Debug\EntityFramework1.exe
+E:\Bizruntime\training\c#\EntityFramework1\obj\Debug\EntityFramework1.pdb
+E:\Bizruntime\training\c#\EntityFramework1\obj\Debug\EntityFramework1.Migrations.CreatePost.resources
+E:\Bizruntime\training\c#\EntityFramework1\obj\Debug\EntityFramework1.csproj.GenerateResource.cache

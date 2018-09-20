@@ -1,0 +1,12 @@
+E:\Bizruntime\training\c#\EntityFramework\bin\Debug\EntityFramework.exe.config
+E:\Bizruntime\training\c#\EntityFramework\bin\Debug\EntityFramework.exe
+E:\Bizruntime\training\c#\EntityFramework\bin\Debug\EntityFramework.pdb
+E:\Bizruntime\training\c#\EntityFramework\bin\Debug\EntityFramework.dll
+E:\Bizruntime\training\c#\EntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+E:\Bizruntime\training\c#\EntityFramework\bin\Debug\EntityFramework.xml
+E:\Bizruntime\training\c#\EntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+E:\Bizruntime\training\c#\EntityFramework\obj\Debug\EntityFramework.csprojAssemblyReference.cache
+E:\Bizruntime\training\c#\EntityFramework\obj\Debug\EntityFramework.csproj.CoreCompileInputs.cache
+E:\Bizruntime\training\c#\EntityFramework\obj\Debug\EntityFramework.csproj.CopyComplete
+E:\Bizruntime\training\c#\EntityFramework\obj\Debug\EntityFramework.exe
+E:\Bizruntime\training\c#\EntityFramework\obj\Debug\EntityFramework.pdb
