@@ -1,0 +1,50 @@
+﻿@page
+@model ASP.NETCore.Pages.Movies.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>LaraTechnology</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="LaraTechnology.ID" />
+            <div class="form-group">
+                <label asp-for="LaraTechnology.Name" class="control-label"></label>
+                <input asp-for="LaraTechnology.Name" class="form-control" />
+                <span asp-validation-for="LaraTechnology.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LaraTechnology.Joining_Date" class="control-label"></label>
+                <input asp-for="LaraTechnology.Joining_Date" class="form-control" />
+                <span asp-validation-for="LaraTechnology.Joining_Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LaraTechnology.Course_Taken" class="control-label"></label>
+                <input asp-for="LaraTechnology.Course_Taken" class="form-control" />
+                <span asp-validation-for="LaraTechnology.Course_Taken" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LaraTechnology.Amount_Paid" class="control-label"></label>
+                <input asp-for="LaraTechnology.Amount_Paid" class="form-control" />
+                <span asp-validation-for="LaraTechnology.Amount_Paid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
